@@ -245,7 +245,7 @@ const Portfolio = () => {
         View Project Code →
            </a>
            <ul className="list-disc list-inside text-gray-300 space-y-2">
-            <li>Designed and built a responsive portfolio website using React and Tailwindcss. Implemented using old existing code</li>
+            <li>Designed and built a responsive portfolio website using React and Tailwindcss. Implemented using existing code</li>
            </ul>
         </div>
 
