@@ -7,7 +7,7 @@ const Portfolio = () => {
   const [typingComplete, setTypingComplete] = useState(false);
 
   useEffect(() => {
-    setText(''); // Reset text at start
+    setText('');
     let currentIndex = 0;
     
     const typingInterval = setInterval(() => {
@@ -23,9 +23,17 @@ const Portfolio = () => {
     return () => clearInterval(typingInterval);
   }, []);
 
+  const technologies = {
+    'Programming Languages': ['Java', 'Python', 'JavaScript', 'C', 'MIPS Assembly', 'VHDL'],
+    'Web Development': ['HTML', 'CSS', 'Django', 'Node.js', 'React.js', 'Express.js', 'Websockets'],
+    'Databases': ['MySQL', 'MongoDB', 'PostgreSQL'],
+    'Tools & Platforms': ['Docker', 'VSCode', 'IntelliJ', 'Github'],
+    'Office & Productivity Tools': ['MS Word', 'MS Excel', 'MS PowerPoint']
+  };
+
   return (
     <div className="min-h-screen bg-[#1a1f3c]">
-      {/* Hero Section with Terminal Effect Name */}
+      {/* Hero Section */}
       <div className="py-20">
         <div className="max-w-5xl mx-auto px-6">
           <div className="font-mono text-4xl md:text-6xl text-white">
@@ -34,10 +42,10 @@ const Portfolio = () => {
           </div>
           
           <div className="mt-8 flex gap-4">
-            <a href="https://github.com/Saheerr" className="text-white hover:text-gray-300">
+            <a href="https://github.com/yourusername" className="text-white hover:text-gray-300">
               <Github size={24} />
             </a>
-            <a href="https://www.linkedin.com/in/saheer-rahman-40098728a/" className="text-white hover:text-gray-300">
+            <a href="https://linkedin.com/in/yourusername" className="text-white hover:text-gray-300">
               <Linkedin size={24} />
             </a>
             <a href="mailto:saheerrahman98@gmail.com" className="text-white hover:text-gray-300">
@@ -49,30 +57,31 @@ const Portfolio = () => {
 
       {/* Main Content */}
       <div className="max-w-5xl mx-auto px-6 py-16">
-        {/* Skills Section */}
+        {/* About Section */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold mb-8 text-white">Technical Skills</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-xl font-semibold mb-4 text-white">Programming Languages</h3>
-              <div className="flex flex-wrap gap-2">
-                {['Java', 'Python', 'JavaScript', 'C', 'MIPS Assembly', 'VHDL'].map(skill => (
-                  <span key={skill} className="bg-[#2a2f4c] text-white px-3 py-1 rounded-full text-sm">
-                    {skill}
-                  </span>
-                ))}
+          <div className="text-gray-300 text-lg leading-relaxed">
+            Hi! I'm Saheer, a CS student at UB, passionate about turning my code into reality :)) I'm experienced in React, Django, and databases like MongoDB, PostgreSQL, and MySQL. Lately, I've been diving deep into AI/ML and Data Science. Btw, this site is made with React!
+            <br /><br />
+            Besides showcasing my profile, this site will be my space to share blogs about anything that interests me. Stay tuned!
+          </div>
+        </section>
+
+        {/* Technologies Section */}
+        <section className="mb-20">
+          <h2 className="text-3xl font-bold mb-8 text-white">Technologies I am experienced in</h2>
+          <div className="grid grid-cols-1 gap-8">
+            {Object.entries(technologies).map(([category, items]) => (
+              <div key={category}>
+                <h3 className="text-xl font-semibold mb-4 text-white">{category}</h3>
+                <div className="flex flex-wrap gap-2">
+                  {items.map(tech => (
+                    <span key={tech} className="bg-[#2a2f4c] text-white px-3 py-1 rounded-full text-sm">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4 text-white">Web Development</h3>
-              <div className="flex flex-wrap gap-2">
-                {['HTML', 'CSS', 'Django', 'Node.js', 'React.js', 'Express.js', 'Websockets'].map(skill => (
-                  <span key={skill} className="bg-[#2a2f4c] text-white px-3 py-1 rounded-full text-sm">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
         </section>
 
@@ -102,7 +111,7 @@ const Portfolio = () => {
         </section>
 
         {/* Projects Section */}
-        <section>
+        <section className="mb-20">
           <h2 className="text-3xl font-bold mb-8 text-white">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-[#2a2f4c] p-6 rounded-lg">
@@ -133,6 +142,22 @@ const Portfolio = () => {
               </ul>
             </div>
           </div>
+        </section>
+
+        {/* Relevant Coursework Section */}
+        <section className="mb-20">
+          <h2 className="text-3xl font-bold mb-8 text-white">Relevant Coursework</h2>
+          <div className="space-y-4">
+            <div className="text-white">CSE 250: Data Structures</div>
+            <div className="text-white">CSE 312: Web Applications</div>
+            <div className="text-white font-bold">CSE 460LEC: Data Models and Query Language</div>
+          </div>
+        </section>
+
+        {/* Blogs Section */}
+        <section className="mb-20">
+          <h2 className="text-3xl font-bold mb-8 text-white">Blogs</h2>
+          <div className="text-white text-xl">upcoming!</div>
         </section>
       </div>
     </div>
