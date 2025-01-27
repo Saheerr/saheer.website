@@ -128,14 +128,14 @@ const Portfolio = () => {
           </div>
 
           <div className="flex gap-4">
-            <a href="https://github.com/yourusername" 
+            <a href="https://github.com/Saheerr" 
               className="text-white hover:text-gray-300 transition-colors"
               target="_blank" 
               rel="noopener noreferrer"
             >
               <Github size={24} />
             </a>
-            <a href="https://linkedin.com/in/yourusername" 
+            <a href="https://www.linkedin.com/in/saheer-rahman-40098728a/" 
               className="text-white hover:text-gray-300 transition-colors"
               target="_blank" 
               rel="noopener noreferrer"
@@ -178,9 +178,9 @@ const Portfolio = () => {
             <h3 className="text-xl md:text-2xl font-semibold text-white">Intern at Ontik Technology</h3>
             <p className="text-gray-400 mb-4">Dec 2024 - Apr 2025</p>
             <ul className="list-disc list-inside text-gray-300 space-y-2">
-              <li>Gained practical experience in Web Development, AI/ML, and Data Science</li>
-              <li>Conducted research on SaaS platforms, focusing on LazyChat</li>
-              <li>Contributed to LazyChat's dashboard design</li>
+              <li>Gaining practical experience in Web Development, AI/ML, and Data Science</li>
+              <li>Conducting research on SaaS platforms, focusing on LazyChat</li>
+              <li>Contributing to LazyChat's dashboard design</li>
             </ul>
           </div>
           <div className="border-l-4 border-[#1a1f3c] pl-6">
@@ -258,7 +258,7 @@ const Portfolio = () => {
             target="_blank" 
             rel="noopener noreferrer"
            >
-    Visit Website →
+        Visit Website →
            </a>
            <ul className="list-disc list-inside text-gray-300 space-y-2">
             <li>Contributing to frontend development under senior developer guidance</li>
@@ -317,7 +317,7 @@ const Portfolio = () => {
     </div>
    </div>
 
-      {/* Prevent white space at bottom */}
+      
     <div className="h-16 bg-[#1a1f3c]"></div>
    </div>
   );
