@@ -232,16 +232,14 @@ const Portfolio = () => {
             <p className="text-gray-400 mb-4">
               Python · Django · JavaScript · Leaflet.js
             </p>
-            <button
-              onClick={() =>
-                window.alert(
-                  "This is a school project — please contact me at saheerrahman98@gmail.com for the code."
-                )
-              }
-              className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 mb-4"
+            <a
+              href="https://github.com/10Fari10/Project"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-1 border rounded hover:bg-gray-100 mb-4 inline-block"
             >
-              Contact for Code
-            </button>
+              View Project Code
+            </a>
             <ul className="list-disc list-inside text-gray-300 space-y-2">
               <li>Built a dynamic map interface using Leaflet.js for location-based reviews</li>
               <li>Implemented user authentication and media upload functionality</li>
@@ -319,7 +317,7 @@ const Portfolio = () => {
               href="https://github.com/Saheerr/saheer.website"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-3 py-1 border rounded hover:bg-gray-100 mb-4"
+              className="px-3 py-1 border rounded hover:bg-gray-100 mb-4 inline-block"
             >
               View Project Code
             </a>
