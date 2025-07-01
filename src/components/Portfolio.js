@@ -121,7 +121,7 @@ const Portfolio = () => {
             <span className={`inline-block ${typingComplete ? 'animate-pulse' : ''}`}>_</span>
           </div>
           <div className="text-gray-100 text-xl md:text-2xl leading-relaxed font-light mb-6 bg-[#2a2f4c] p-8 rounded-xl border border-gray-700">
-            Hi! I'm Saheer, a Computer Science student at UB with a minor in Economics. I blend my passion for data science—analyzing economic trends and building interactive Power BI dashboards—with full-stack development skills in React, Django, and Node.js. I've designed normalized databases in PostgreSQL, optimized queries, and built dynamic web applications. I also write blog posts on economic research topics, sharing insights driven by real-world data.
+          Hi, I'm Saheer, a Computer Science student at UB with a minor in Economics. I bring a strong foundation in data science and software engineering, with experience analyzing economic trends and developing interactive dashboards in Power BI. My technical background includes full-stack development using React, Django, and Node.js, as well as designing normalized PostgreSQL databases and optimizing query performance. I also write data-driven blog posts on economic topics, demonstrating my ability to extract insights and communicate complex ideas clearly. I am actively seeking opportunities where I can apply my skills to solve real-world problems through data and technology.
           </div>
           <div className="flex gap-4">
             <a href="https://github.com/Saheerr" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
